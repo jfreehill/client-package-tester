@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && npx http-server ./dist"
+    "build": "babel src -d .tmp && webpack && rm -rf .tmp",
+    "start": "npx http-server ./dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"

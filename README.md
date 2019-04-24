@@ -17,10 +17,10 @@ node 5.2 and up (needs npx)
 npm i
 ```
 
-## Run babel, webpack & serve
+## Build & serve
 
 ```shell
-npm run start
+npm run build && npm run start
 ```
 
 Terminal will provide the URL that can be used to access files in browser.
